@@ -1,0 +1,24 @@
+{
+  "name": "koajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ntakuya/koajs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ntakuya/koajs/issues"
+  },
+  "homepage": "https://github.com/Ntakuya/koajs#readme",
+  "dependencies": {
+    "koa": "^2.13.0"
+  }
+}

@@ -1,0 +1,19 @@
+version: "3"
+services:
+  api-server:
+    build: .
+    container_name: api-server
+    tty: true
+    volumes:
+      - "./:/myp-app"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db-server
+  db-server:
+    container_name: db-server
+    image: mysql:5
+    tty: true
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: koa-develop
